@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #f6f6f6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    background: #85c9eb;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.btn:hover {
+    background: #6699b3;
+    transition: 0.5s; 
+    color: #ffffff !important;
+}
+
+.text-input {
+    padding: .7rem, 1rem;
+    display: block;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+    color: #444;
+    line-height: 1.5rem;
+    font-size: 0.85rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* nav-bar */
+
+.header {
+    height: 50px;
+    background-color: #85c9eb;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    height: 50px;
+    width: 200px;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+.logo:hover {
+    background: #6699b3;
+    transition: 0.5s;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.header nav {
+    height: 50px;
+    width: 100%;
+    top: 0px;
+    padding: 0px;
+    background-color: #85c9eb;
+    font-family: 'Playfair Display', sans-serif;
+    position: fixed;
+    box-shadow: 2px 0 5px rgb(0 0 0 / 50%);
+    z-index: 100;
+}
+
+.header nav ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+} 
+
+.header nav ul li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header nav ul li {
+    float: left;
+}
+
+.header nav ul li a {
+    display: block;
+    padding: 12px;
+    font-size: 1.2em;
+    color: #000;
+    text-decoration: none;
+}
+
+.header nav ul li a:hover {
+    background: #6699b3;
+    transition: 0.5s;
+}
+
+.header .user-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#user-icon {
+    color: #ffffff;
+}
+
+#chevron-icon {
+    font-size: 0.8em;
+}
+
+.user-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    min-width: 150px;
+    right: 0;
+}
+
+.user-dropdown-content li {
+    width: 100%;
+}
+
+.user-dropdown-content a {
+    display: block;
+    color: #000000;
+    width: 100%;
+    text-decoration: none;
+}
+
+.user-dropdown:hover .user-dropdown-content {
+    display: block;
+    background: #d5d6d6;
+    transition: 0.5s;
+    width: 100%;
+}
+
+/* .fixed-header {
+    display: none;
+} */
+
+.page-wrapper {
+    margin-top: 20px;
+}
+
+.page-wrapper .info {
+    display: block;
+    margin: auto 100px auto 100px;
+}
+
+/* moving hyprfcsd logo */
+
+#hyprfcsd img {
+    display: block;
+    position: absolute;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes SwitchInOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+#hyprfcsd img.hyprfcsd-top {
+    animation-name: SwitchInOut;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 0.2s;
+    animation-direction: alternate;
+    animation-delay: 0s;
+}
+
+#hyprfcsd img.hyprfcsd-middle {
+    animation-name: SwitchInOut;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 0.2s;
+    animation-direction: alternate;
+    animation-delay: 0.2s;
+}
+
+#hyprfcsd img.hyprfcsd-bottom {
+    animation-name: SwitchInOut;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 0.2s;
+    animation-direction: alternate;
+    animation-delay: 0.4s;
+}
+
+/* content */
+
+.content {
+    width: 90%;
+    margin: 30px auto 30px;
+}
+
+.content .main-content {
+    width: 70%;
+    float: left;
+}
+
+.content .main-content .recent-posts-title {
+    margin: 20px;
+}
+
+.content .main-content .post {
+    width: 95%;
+    height: 270px;
+    margin: 20px auto;
+    border-radius: 5px;
+    position: relative;
+    background: #ffffff;
+}
+
+.content .main-content .post .post-image {
+    width: 40%;
+    height: 100%;
+    float: left;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.content .main-content .post .post-preview {
+    width: 55%;
+    padding: 10px;
+    float: right;
+    border-radius: 5px;
+}
+
+.content .main-content .post .post-preview .user {
+    color: #727272;
+}
+
+.content .main-content .post .post-preview .post-preview-date {
+    font-family: 'Playfair Display', sans-serif;
+    color: #727272;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content .main-content .post .post-preview a {
+    color: #000000;
+}
+
+.content .main-content .post .post-preview a:hover {
+    color: #6699b3;
+    transition: 0.5s; 
+}
+
+.content .main-content .post .post-preview .preview-text {
+    color: #727272;
+}
+
+.content .main-content .post .post-preview .read-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.content .sidebar {
+    float: left;
+    width: 30%;
+    margin-top: 80px;
+    /* border: 1px dashed green; */
+    /* height: 300px; */
+}
+
+.content .sidebar .section {
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* .content .sidebar .section h2 {
+    padding: 0px 0px 20px 0px;
+    margin: 0px;
+} */
+
+.content .sidebar .section-search{
+    /* border: 1px solid blue; */
+}
+
+.content .sidebar .section-topics {
+    padding: 0px;
+    /* border: 1px solid red; */
+}
+
+.content .sidebar .section.topics ul li {
+    list-style: none;
+}
+
+/*media queries*/
+
+@media only screen and (max-width: 500px)  {
+
+    .header {
+        position: relative;
+    }
+    
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em;
+        font-size: 1.5em;
+    }
+
+    .show-nav {
+        display: block;
+    }
+
+    .nav-bar {
+        position: absolute;
+        top: 50px;
+    }
+    
+    nav ul {
+        display: none;
+        width: 100%;
+        background: #78b4d2;
+    }
+
+    nav ul li {
+        float: none;
+        width: 100%;
+    }
+
+    nav ul a {
+        text-align: center;
+    }
+
+    .user-dropdown {
+        width: 100%;
+    } 
+
+}
